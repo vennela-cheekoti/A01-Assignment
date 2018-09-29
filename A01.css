@@ -2,7 +2,8 @@ body {
  
   background-image: url("image1.jpg");
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: 1000%;
+  
 
 }
 article{
@@ -75,7 +76,7 @@ aside{
   margin-left:100px;
 }
 form{
-  margin-top:100px;
+  margin-top:50px;
   margin-left:100px;
   font-size: 20px;
 }
@@ -86,4 +87,13 @@ form{
 #link{
   margin-top:50px;
   margin-left:100px;
+}
+#simple{
+  margin-left:10%;
+}
+h1{
+  margin-left:10%;
+}
+#result{
+  margin-left:10%;
 }

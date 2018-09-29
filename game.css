@@ -1,57 +1,95 @@
-* {  
-    margin: 0px;
-    padding: 0px;
+body{
+  
+    color:black;
   }
   
-  html {
-    display: block;
-  }
-  
-  body {
-    margin: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+  td {
+    border: 2px solid #333;
+    height: 100px;
+    width: 100px;
     text-align: center;
+    vertical-align: middle;
+    font-family: 'Indie Flower', cursive;
+  
+    font-size: 4em;
+    font-weight:bold;
+    cursor: pointer;
   }
   
-  header, footer, aside{
-    
+  table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    top: 90px;
+    margin-top:12%;
+  }
+  
+  table tr:first-child td {
+    border-top: 0;
+  }
+  
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  
+  table tr td:first-child {
+    border-left: 0;
+  }
+  
+  table tr td:last-child {
+    border-right: 0;
+  }
+  
+  .endgame {
+    display: none;
+    width: 200px;
+    top: 170px;
+    background-color: rgba(205,133,63, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
     text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
   }
   
-  main {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    
-    color: #444;
-    padding: 1em;
+  #replay {
+    border-radius: 8px;
+    font-size: .7em;
+    color: black;
   }
   
-  section {
-    background-color: #006747;
-    
-    border-radius: 0.5em;
-    padding: 30px;
-    margin: 0.5em;
-    font-size: 1em;
-    text-align: center;
-    height:50px;
-    width:200px;
-    margin-left:150px;
+  #text{
+        margin-top: -41px;
   }
   
-  ol, ul {
-    padding-left: 1em;
-    padding-bottom: 1em;
+  .selectDificulty {
+    display: flex;
+    /*justify-content: space-evenly;*/
+     position: absolute;
+    left: 50%;
+    margin-left: 80px; 
+
+  }
+  .selectLetter{
+    display: flex;
+    /*justify-content: space-evenly;*/
+     position: absolute;
+    left: 0%;
+    /*margin-left: -00px; */
+
   }
   
-  li {
-     text-align: left;
-     font-size: 1em;
+  .dropdown {
+    margin-left: 1rem;
+    height: 28px;
+    margin-top: 1rem;
   }
   
-  a {
-    text-decoration: none;
-  }
-  h1{
-      text-align:center;
-  }
+  
+  
+  
+  

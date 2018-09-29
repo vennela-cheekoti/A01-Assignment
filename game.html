@@ -1,44 +1,61 @@
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tic Tac Toe</title> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="game.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="A01.css">
-    </head>
+  <title>Web App for Simple Interest Calculation</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A01</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="A01.css">
+  </head>
     <body>
+        <div>
             <nav class="navbar navbar-inverse">
-                    <div class="container">
-                      <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">Introduction</a>
-                      
-                      <a class="navbar-brand" href="#">Game</a>
-                      <a class="navbar-brand" href="contact.html">Contact</a>
-                    </div>
-                    </div>
-                  </nav>
-                  <header>
-                        <h1>Tic Tac Toe</h1>
-                      </header>
-                      <main>
-                        <section id="upper-left"> </section>
-                        <section id="upper-mid"> </section>
-                        <section id="upper-right"> </section>
-                    
-                        <section id="center-left"> </section>
-                        <section id="center-mid"> </section>
-                        <section id="center-right"> </section>
-                    
-                        <section id="lower-left"> </section>
-                        <section id="lower-mid"> </section>
-                        <section id="lower-right"> </section>
-                      </main>
-        <footer>
-            <h4>Tic Tac toe</h4>
-        </footer>
+              <div class="container">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Vennela Cheekoti</a>
+                  <a class="navbar-brand" href="index.html">Introduction</a>
+                
+                <a class="navbar-brand" href="#">Interest calculator</a>
+                <a class="navbar-brand" href="contact.html">Contact</a>
+              </div>
+              </div>
+            </nav>
+            <div class="row">
+            <div class="col-md-6">
+        
+        <h1>Simple Interest Calculation</h1>
+        <p id="simple">
+        Amount:<br> <input id="p"><br><br>
+        Rate: <br><input id="r"><br><br>
+        No. of Years: <br><input id="n"><br><br>
 
-      </body>
-    </html>
+        <button onclick="calculate()">calculate</button>
+
+        <p id="result"></p>
+        </p>
+        </div>
+        <div class="col-md-6">
+          <h1> Compound Interest Calculation</h1>
+          <form>
+              
+            
+              Enter your Principal Amount :<br><input type="text" id="getPrincipalValue" name="prncipal" ><br>
+              Enter the interest Rate :<br><input type="text" id="getInterestRate" name="interest"><br>
+              Enter the Interest paid in " n" amount of  year : <br><input type="text" id="getYear" name="year"><br>
+              Number of Times interest paid per year? :<br><input type="text" id="getTiming" name="timing"><br><br>
+              <P>
+              <input type="button" value="Calculate" id="" onclick="compoundInterest(this.principal , this.interest , this.nyear , this.ntime);"/></P>
+     
+
+      </form>
+                <p id="compounded"> </p>
+
+        
+        </div>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
