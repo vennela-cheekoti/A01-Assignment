@@ -33,10 +33,10 @@
         Rate: <br><input id="r"><br><br>
         No. of Years: <br><input id="n"><br><br>
 
-                    
+        <input type="button" value="calculate" id="" onclick="calculateSimple(document.getElementById('p').value , document.getElementById('n').value , document.getElementById('r').value);">          
 
 
-        <button onclick="calculate()">calculate</button>
+        
 
         <p id="result"></p>
         </p>
@@ -51,7 +51,7 @@
               Enter the Interest paid in " n" amount of  year : <br><input type="text" id="getYear" name="year"><br>
               Number of Times interest paid per year? :<br><input type="text" id="getTiming" name="timing"><br><br>
               <P>
-              <input type="button" value="Calculate" id="" onclick="compoundInterest(this.principal , this.interest , this.nyear , this.ntime);"/></P>
+              <input type="button" value="Calculate" id="" onclick="compoundInterest(this.principal , this.interest , this.nyear , this.ntime);"></P>
      
 
       </form>
@@ -59,6 +59,11 @@
 
         
         </div>
+        </div>
+        <div>
+          <p>Results of the unit tests are available at
+            <a href="test/test.html">test/test.html</a>.</p>
+          <br/>
         </div>
         <script src="game.js"></script>
     </body>
